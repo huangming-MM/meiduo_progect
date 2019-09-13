@@ -27,7 +27,7 @@ SECRET_KEY = '+uv5y*wotgn8@+l+pfyhpnno@ij#6vc+obwh@+u^14$@xmd*8m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.meiduo.site']
 
 
 # Application definition
@@ -124,6 +124,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 CACHES = {
     "default": { # 默认

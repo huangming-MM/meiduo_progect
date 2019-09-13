@@ -10,4 +10,3 @@ def test_django_redis():
     #3.增删改查
     client.set('django_redis_key','itcast')
 
-    print(client.get('django_redis_key'))
