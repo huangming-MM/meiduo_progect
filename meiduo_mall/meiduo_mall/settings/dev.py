@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'apps.users',
 ]
 
 MIDDLEWARE = [
@@ -190,3 +192,6 @@ LOGGING = {
 # 实例化日志对象
 import logging
 logger = logging.getLogger('django')
+
+
+AUTH_USER_MODEL = 'users.User'
