@@ -20,4 +20,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^',include('apps.users.urls')),
+
+    url(r'^', include('apps.contents.urls', namespace="contents")),
 ]

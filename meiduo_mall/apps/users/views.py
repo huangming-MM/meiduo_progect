@@ -3,6 +3,7 @@ import re
 from django import http
 
 from django.shortcuts import render, redirect
+from django.urls import reverse
 from django.views import View
 
 from apps.users.models import User
@@ -71,11 +72,7 @@ class RegisterView(View):
         login(request, user)
 
 
-
-
-        return redirect('/')
-
-
+        return redirect(reverse('contents:index'))
 
 
 
